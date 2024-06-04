@@ -1,0 +1,142 @@
+html {
+  scroll-behavior: smooth;
+  background-color: rgba(0, 0, 0, 0.726);
+}
+body {
+  color: white;
+}
+#sample img {
+  border-radius: 20px;
+  border: 7px double rgba(217, 255, 0, 0.61);
+  box-shadow: 5px 5px 5px rgb(105, 128, 0);
+}
+#sample img:hover {
+  transform: rotate(-5deg);
+}
+.wrapper {
+  display: flex;
+
+  justify-content: center;
+}
+#header ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+}
+.container {
+  display: grid;
+  grid-template-rows: 15vh 55vh 1fr 0.5fr 35vh;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3%;
+  grid-template-areas:
+    "img head head head"
+    "obj obj profile profile"
+    "project project pro pro"
+    "work work co co"
+    "con con con con";
+  width: 70vw;
+
+  padding: 20px;
+}
+#footer {
+  grid-area: foot;
+  text-align: center;
+}
+#code {
+  grid-area: co;
+}
+#sample {
+  grid-area: project;
+  text-align: center;
+}
+#image {
+  grid-area: img;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgb(3, 153, 246);
+  border-radius: 50%;
+}
+#header {
+  grid-area: head;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  box-shadow: 5px 5px 5px rgb(235, 233, 135);
+  background-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0),
+    rgb(246, 161, 3)
+  );
+}
+#obj {
+  grid-area: obj;
+  border-radius: 15px;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(184, 21, 199));
+  color: white;
+  box-shadow: 5px 5px 5px pink;
+  border: 2px solid white;
+}
+#profile {
+  grid-area: profile;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgb(245, 245, 245);
+}
+#profile img {
+  border-radius: 20px;
+}
+#project {
+  grid-area: pro;
+  border-radius: 15px;
+  background-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0),
+    rgb(15, 126, 104)
+  );
+  color: white;
+  box-shadow: 5px 5px 5px greenyellow;
+  border: 2px solid white;
+}
+#wor {
+  grid-area: work;
+  border-radius: 15px;
+  background-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0),
+    rgb(126, 74, 15)
+  );
+  color: white;
+  box-shadow: 5px 5px 5px orange;
+  border: 2px solid white;
+}
+#contact {
+  grid-area: con;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(179, 59, 59));
+  border: 2px solid white;
+  box-shadow: 5px 5px 5px rgb(255, 174, 0);
+}
+.box {
+  border-radius: 20px;
+  padding: 10px;
+}
+a {
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  font-style: italic;
+}
+a:hover {
+  color: yellow;
+}
+#contact a {
+  margin-left: 30px;
+}
+h2 {
+  text-decoration: underline;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h3 {
+  color: yellow;
+  font-style: italic;
+}
